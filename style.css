@@ -1,0 +1,71 @@
+:root {
+    --mainBgColor: rgb(29, 29, 29);
+    --secColor: rgb(255, 198, 43);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: var(--mainBgColor);
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainBgColor);
+}
+header {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainBgColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header .logo span{
+    color: var(--secColor);
+}
+header ul {
+    list-style-type: none;
+}
+header ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+header ul li a:hover {
+    color: var(--secColor);
+    text-decoration: underline;
+}
+.intro {
+    width: 100%;
+    height: 600px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+.intro .text {
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+}
+.intro .imgBox {
+    width: 100%;
+    height: 80%;
+}
